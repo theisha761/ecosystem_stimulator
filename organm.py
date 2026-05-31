@@ -13,8 +13,12 @@ class Organism(ABC):
     def set_health(self,h):
         if isinstance(h,(int,float)):
             self.__health=h
-
-            
+    def get_name(self):
+        return self.__name
+    def get_age(self):
+        return self.__age
+    def get_alive(self):
+        return self.__is_alive  
     def get_energy(self):
         return self.__energy
     def set_energy(self,h):
