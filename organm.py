@@ -8,6 +8,10 @@ class Organism(ABC):
         self.__energy=energy
         self.__is_alive=True
         Organism.total_organisms=Organism.total_organisms+1
+    def get_is_alive(self):
+        return self.__is_alive
+    def set_is_alive(self,value):
+        self.__is_alive=value
     def get_health(self):
         return self.__health
     def set_health(self,h):
