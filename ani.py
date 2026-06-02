@@ -1,4 +1,5 @@
 from abc import ABC,abstractmethod
+from organm import Organism
 class Animal(Organism):
     def __init__(self,name,age,health,energy,speed,prey):
         super().__init__(name,age,health,energy)

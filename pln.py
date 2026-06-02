@@ -1,3 +1,4 @@
+from organm import Organism
 class Plant(Organism):
     def __init__(self,name,age,health,energy,height,sunlight):
         super().__init__(name,age,health,energy)
