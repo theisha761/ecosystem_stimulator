@@ -21,6 +21,9 @@ class Habitat:
     def __len__(self):
         return len(self.__organisms)
     def __str__(self):
-        return (f'''the organisms are {self.__organisms}''')
+        result = f"Habitat: {self.__name}\n"
+        for org in self.__organisms:
+            result =result+ str(org) + "\n"
+        return result
 
         

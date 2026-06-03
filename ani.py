@@ -1,5 +1,6 @@
 from abc import ABC,abstractmethod
 from organm import Organism
+from pln import Plant
 class Animal(Organism):
     def __init__(self,name,age,health,energy,speed,prey):
         super().__init__(name,age,health,energy)
@@ -11,7 +12,7 @@ class Animal(Organism):
     def eat(self):
         pass
     def hunt(self,a):
-        organisms=a.get_organisms()
+        organisms=a.get_org()
         for organism in organisms:
             if organism.get_name() in self.__preylist:
                 self.eat(organism)
