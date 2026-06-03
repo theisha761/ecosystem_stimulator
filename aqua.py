@@ -27,5 +27,3 @@ class Dolphin(AquaticMammal):
         return "heeeeeeem"
     
 
-print(Dolphin.__mro__)
-

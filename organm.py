@@ -40,7 +40,10 @@ class Organism(ABC):
 
     def pass_day(self):
         self.__age=self.__age+1
-        self.__health=self.__health-0.25
+        if self.__health>0:
+            self.__health=self.__health-0.25
+        else:
+            self.__is_alive=False
     def __str__(self):
         summ=f'''organism {self.__name} is of age {self.__age} with health {self.__health} and energy {self.__energy} and the fact that it is alive is {self.__is_alive}'''
         return summ
